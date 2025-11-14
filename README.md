@@ -13,16 +13,16 @@ Ce projet vise à extraire automatiquement deux informations à partir de descri
 Le notebook met en œuvre une approche hybride combinant :
 
 - des techniques linguistiques classiques (nettoyage, regex, règles),
-- un modèle moderne de reconnaissance d’entités nommées (CamemBERT NER),
+- un modèle de reconnaissance d’entités nommées (CamemBERT NER),
 
-
-Le projet a été réalisé dans le cadre d’une démarche personnelle pour démontrer mes compétences en NLP appliqué et en documentation.
+Le but étant également de produire un code facilement explicable à des équipes non techniques.
+Le projet a été réalisé dans le cadre d’une démarche personnelle pour démontrer mes compétences en NLP et en documentation, le tout en produisant un code lisible et conforme aux bonnes pratiques.
 
 ---
 
 ## 📊 Exemple de résultats
 
-| Texte | Âge | Ville normalisée |
+| Texte | Âge | Ville de naissance |
 |-------|-----|------------------|
 | Patiente âgée de 72 ans, née à Pariis, veuve, vit seule à domicile. Ancienne enseignante. | 72 | Paris |
 | Étudiante de 23 ans, née à l'hopital d'Annecy, célibataire, vit en colocation à Marseile. | 23 | Annecy |
