@@ -22,7 +22,7 @@ Le projet a été réalisé dans le cadre d’une démarche personnelle pour dé
 
 ## 📊 Exemple de résultats
 
-| Texte | Âge | Ville de naissance |
+| Texte | Âge | Ville de naissance (normalisées) |
 |-------|-----|------------------|
 | Patiente âgée de 72 ans, née à Pariis, veuve, vit seule à domicile. Ancienne enseignante. | 72 | Paris |
 | Étudiante de 23 ans, née à l'hopital d'Annecy, célibataire, vit en colocation à Marseile. | 23 | Annecy |
