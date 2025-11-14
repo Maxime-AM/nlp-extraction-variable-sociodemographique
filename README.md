@@ -14,9 +14,9 @@ Le notebook met en œuvre une approche hybride combinant :
 
 - des techniques linguistiques classiques (nettoyage, regex, règles),
 - un modèle moderne de reconnaissance d’entités nommées (CamemBERT NER),
-- une normalisation à l’aide d’un référentiel officiel des communes françaises.
 
-Le projet a été réalisé dans le cadre d’une démarche personnelle pour démontrer mes compétences en NLP appliqué, en structuration de pipeline et en documentation claire.
+
+Le projet a été réalisé dans le cadre d’une démarche personnelle pour démontrer mes compétences en NLP appliqué et en documentation.
 
 ---
 
@@ -27,8 +27,6 @@ Création de textes simulés incluant :
 - fautes de frappe réalistes,
 - formulations variées,
 - ambiguïtés lexicales et syntaxiques.
-
-Ces données permettent de tester la robustesse des méthodes d’extraction.
 
 ---
 
@@ -41,8 +39,6 @@ Le pipeline de nettoyage inclut :
 - retrait des espaces multiples  
 - suppression des stopwords (NLTK)
 
-> Remarque : la suppression de certains stopwords peut perturber la détection des villes par NER. Ce point est discuté dans le notebook.
-
 ---
 
 ### 3. Extraction de l’âge (Regex + analyse contextuelle)
@@ -52,8 +48,6 @@ Méthodologie :
 - exploration des motifs entourant les chiffres,
 - construction d’un regex robuste permettant de capturer différentes formes :  
   `25 ans`, `25a`, `25 an`, `25 année`, `25 annees`, etc.
-
-Une analyse visuelle du taux de détection est fournie, ainsi que les cas non capturés.
 
 ---
 
@@ -82,8 +76,6 @@ Pour garantir la qualité de la variable extraite :
 - correspondance via similarité (RapidFuzz),
 - récupération de la forme officielle de la ville.
 
-Résultat : une variable standardisée, corrigée, et conforme au référentiel géographique.
-
 ---
 
 ## 📊 Exemple de résultats
@@ -101,15 +93,13 @@ Résultat : une variable standardisée, corrigée, et conforme au référentiel 
 
 - Nombres écrits en lettres non pris en charge  
 - Certaines fautes trop importantes échappent au fuzzy matching  
-- Le modèle NER détecte des lieux non municipaux (départements, régions)  
-- Dataset réduit, utilisé pour un test conceptuel
+- Dataset réduit
 
 ---
 
 ## 🚀 Améliorations possibles
 
 - Fine-tuning d’un modèle NER sur un corpus annoté  
-- Ajout d’algorithmes phonétiques (Soundex, Metaphone français)  
 - Mise en place d’un jeu de test annoté et calcul de métriques (Precision, Recall, F1)  
 - Ajustement dynamique du prétraitement selon la variable à extraire
 
@@ -117,17 +107,10 @@ Résultat : une variable standardisée, corrigée, et conforme au référentiel 
 
 ## 🛠️ Technologies utilisées
 
-- Python 3  
+- Python 
 - Pandas  
 - SpaCy  
 - HuggingFace Transformers  
-- CamemBERT NER  
 - RapidFuzz  
 - NLTK  
 - Matplotlib  
-- WordCloud  
-
----
-
-## 📁 Structure du dépôt
-
