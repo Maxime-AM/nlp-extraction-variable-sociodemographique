@@ -20,7 +20,17 @@ Le projet a été réalisé dans le cadre d’une démarche personnelle pour dé
 
 ---
 
-## 🧱 Pipeline de traitement
+## 📊 Exemple de résultats
+
+| Texte | Âge | Ville normalisée |
+|-------|-----|------------------|
+| Patiente âgée de 72 ans, née à Pariis, veuve, vit seule à domicile. Ancienne enseignante. | 72 | Paris |
+| Étudiante de 23 ans, née à l'hopital d'Annecy, célibataire, vit en colocation à Marseile. | 23 | Annecy |
+| Patiente 29a, professeure, née à Bonneval-sur-Arc, célibataire, vit en appartement en périphérie de Lille. | 29 | Bonneval-sur-Arc |
+
+---
+
+## Étapes du projet :	
 
 ### 1. Génération du jeu de données
 Création de textes simulés incluant :
@@ -75,17 +85,6 @@ Pour garantir la qualité de la variable extraite :
 - nettoyage identique à celui des textes,
 - correspondance via similarité (RapidFuzz),
 - récupération de la forme officielle de la ville.
-
----
-
-## 📊 Exemple de résultats
-
-| Texte | Âge | Ville normalisée |
-|-------|-----|------------------|
-| Patiente âgée de 72 ans, née à Pariis… | 72 | Paris |
-| Étudiante née à l’hôpital d’Annecy… | 23 | Annecy |
-| Patiente née à Bonneval-sur-Arc… | 29 | Bonneval-sur-Arc |
-| … | … | … |
 
 ---
 
